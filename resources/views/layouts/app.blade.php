@@ -26,18 +26,17 @@
 <body>
     <div id="app">
         <div class="wrapper">
-        @if(Request::is('admin*'))
-            @include('layouts.partial.sidebar')
-        @endif
-            
+            @if(Request::is('admin*'))
+                @include('layouts.partial.sidebar')
+            @endif
             <div class="main-panel">
-            @if(Request::is('admin*'))
-                @include('layouts.partial.topbar')
-            @endif
+                @if(Request::is('admin*'))
+                    @include('layouts.partial.topbar')
+                @endif
                     @yield('content')
-            @if(Request::is('admin*'))
-                @include('layouts.partial.footer')
-            @endif
+                @if(Request::is('admin*'))
+                    @include('layouts.partial.footer')
+                @endif
             </div>
         </div>
     </div>
