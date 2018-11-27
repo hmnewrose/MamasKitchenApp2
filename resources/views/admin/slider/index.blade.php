@@ -3,8 +3,9 @@
 @section('title','Slider')
 
 @push('css')
-
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
 @endpush
+
 @section('content')
     <div class="content">
             <div class="container-fluid">
@@ -17,7 +18,7 @@
                     </div>
                     <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table">
+                    <table id="table" class="table table-striped table-bordered"  cellspacing="0" width="100%">
                             <thead class=" text-primary">
                                 <th> ID </th>
                                 <th> Title </th>
@@ -50,5 +51,11 @@
 @endsection
 
 @push('scripts')
-
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#table').DataTable();
+        } );
+    </script>
 @endpush

@@ -1,8 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
+
 use App\Slider;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class SliderController extends Controller
 {
