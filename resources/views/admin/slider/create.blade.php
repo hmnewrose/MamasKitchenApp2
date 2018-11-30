@@ -46,7 +46,7 @@
                                     <input type="file" name="image">
                                 </div>
                             </div>
-                            <a href="{{route('slider.index')}}" class="btn btn-danger">Bank </a>
+                            <a href="{{route('slider.index')}}" class="btn btn-danger">Back </a>
                             <button type="submit" class="btn btn-primary">Save</button>
 
                         </form>
