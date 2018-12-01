@@ -30,12 +30,13 @@
             </a>
           </li>
 
-          <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
+          <li class="nav-item {{ Request::is('admin/item*') ? 'active': '' }}">
+            <a class="nav-link" href="{{route('item.index')}}">
               <i class="material-icons">library_books</i>
-              <p>Typography</p>
+              <p>Items</p>
             </a>
           </li>
+
           <li class="nav-item ">
             <a class="nav-link" href="./icons.html">
               <i class="material-icons">bubble_chart</i>
